@@ -10,3 +10,5 @@ function between(a, b) {
 
  console.log(between(1,4))
  console.log(between(2,4300))
+ console.log(between(1,4))
+ console.log(between(2,4300))
