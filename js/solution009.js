@@ -18,4 +18,4 @@ function fakeBin(x){
         }
     }  return(binaryString) 
 }
-fakeBin('39215632484763')
+console.log(fakeBin('39215632484763'))
