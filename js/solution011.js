@@ -26,14 +26,18 @@ function dontGiveMeFive(start, end){
   for (let i = start; i <= end; i++){
     newArr.push(i)
    
-    } console.log(newArr)
+    } 
     // filter out 5 from new array
-
-    for (let i = 0; i <= newArr.length; i++) {
-        if(){
-            console.log(newArr[i])
+    for( let i = start; i <= newArr.length; i++){
+        let singleElement = 0;
+        singleElement = newArr[i]
+        if(singleElement.includes(5)){
+            newArr[i].pop()
         }else{}
-    }return newArr
+    }
 }
+console.log(dontGiveMeFive(2,17))
 
-console.log(dontGiveMeFive(2,12))
+// let testArray = [1,2,3,4,5,6,7,8]
+
+// testArray = testArray.filter(5)
