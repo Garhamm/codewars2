@@ -20,22 +20,23 @@
 
 function dontGiveMeFive(start, end){
   // create array of new numbers
-  let newArr = []
-  let arrayLength = end - start
+  let result = []
   //let newArrLength = end - start
   for (let i = start; i <= end; i++){
-    newArr.push(i)
-   
-    } 
-    // filter out 5 from new array
-    for( let i = start; i <= newArr.length; i++){
-        let singleElement = 0;
-        singleElement = newArr[i]
-        if(singleElement.includes(5)){
-            newArr[i].pop()
-        }else{}
-    }
+    if (!i.toString().includes('5')) result.push(i)
+   }
+   return result.length
 }
+    // } 
+    // // filter out 5 from new array
+    // for( let i = start; i <= newArr.length; i++){
+    //     let singleElement = 0;
+    //     singleElement = newArr[i]
+    //     if(singleElement.includes(5)){
+    //         newArr[i].pop()
+    //     }else{}
+    // }
+
 console.log(dontGiveMeFive(2,17))
 
 // let testArray = [1,2,3,4,5,6,7,8]
