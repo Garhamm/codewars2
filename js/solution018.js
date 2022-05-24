@@ -11,15 +11,16 @@
 // In this kata, the function will take a string as its argument, and return a string with every word replaced by the explanation to everything, according to Freud. Note that an empty string, or no arguments, should return an empty string.
 
 function toFreud(string) {
-  let sexyString = ''
-   string.split(' ').forEach((word) => {
-     if(!word == '')
-      sexyString.concat('sex' + ' ')
-    })
-    return sexyString
+  let splitString = string.split(' ')
+  if(string === ''){
+    return ''
+  }else{
+     const result = splitString.map((element) => element = 'sex')
+     return result.join(' ')
   }
+}
 
-
+console.log(toFreud(''))
 console.log(toFreud("test"))
 console.log(toFreud("This is a test"))
 console.log(toFreud("This is a longer test"))
