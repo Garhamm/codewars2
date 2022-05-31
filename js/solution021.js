@@ -15,13 +15,22 @@
 
 function sumOfDifferences(arr) {
     // sort input array
-    arr.sort()
+    let sortedArr = arr.sort(function (a,b) {return a - b;}) 
     // subtract each pair of numbers
-    return arr
+    let subtractedArr = sortedArr
+    let sum = 0;
+    for (let i = 0; i < sortedArr.length -1; i++){
+        sum += (sortedArr[i] - sortedArr[i+1])
+    } return -sum
+
     // return sum of all number pairs
 
 }
+// numArray = numArray.sort(function (a, b) {  return a - b;  })
+// let sum = 0;
+//   for (let i = 0; i < sorted.length - 1; i++) {
+//     sum += (arr[i] - arr[i + 1]);
+//   }
 
-
-sumOfDifferences([1,2,10]) // Expected output: 9
-sumOfDifferences([-3,-2,-1]) // Expected output: 2
+sumOfDifferences([1,2,10,5,6,1])
+sumOfDifferences([-3,-2,-1, -5, -26, 31, 8])
