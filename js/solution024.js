@@ -15,9 +15,3 @@ const reverseSeq = n => {
   };
 
   console.log(reverseSeq(12))
-
-
-
-
-
-  
